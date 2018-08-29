@@ -107,4 +107,4 @@ venv.bak/
 .vscode/
 
 # Output image files
-*.png
+output_images/*.png
