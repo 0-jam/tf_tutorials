@@ -2,9 +2,10 @@
 
 TensorFlow tutorials from [official website](https://www.tensorflow.org/)
 
-- Python 3.6.6 on Miniconda 4.5.4
-- TensorFlow 1.10.0
-- Ubuntu 18.04.1 on Windows Subsystem for Linux (WSL, Windows 10 1803 (April 2018))
+- Tested environment
+    - Python 3.6.6 on Miniconda 4.5.4
+    - TensorFlow 1.10.0
+    - Ubuntu 18.04.1 on Windows Subsystem for Linux (WSL, Windows 10 1803 (April 2018))
 
 ---
 
@@ -17,7 +18,8 @@ TensorFlow tutorials from [official website](https://www.tensorflow.org/)
 ## Todo
 
 - [x] [Basic Classification](https://www.tensorflow.org/tutorials/keras/basic_classification)
-- [ ] [Text Classification](https://www.tensorflow.org/tutorials/keras/basic_text_classification)
+- [x] [Text Classification](https://www.tensorflow.org/tutorials/keras/basic_text_classification)
+- [ ] [Regression](https://www.tensorflow.org/tutorials/keras/basic_regression)
 
 ## Installation
 
