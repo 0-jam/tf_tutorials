@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 plt.switch_backend('agg')
 
 ## Show TensorFlow version
-print("TensorFlow version: ", tf.__version__)
+print("Using TensorFlow", tf.__version__)
 
 ## Load dataset
 # Fashion MNIST dataset: 70000 grayscale images of clothes in 10 categories

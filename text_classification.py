@@ -7,6 +7,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 plt.switch_backend('agg')
 
+## Show TensorFlow version
+print("Using TensorFlow", tf.__version__)
+
 ## Load dataset
 imdb = keras.datasets.imdb
 # keep top 10000 most frequently occuring words in the training data

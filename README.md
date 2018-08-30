@@ -17,9 +17,13 @@ TensorFlow tutorials from [official website](https://www.tensorflow.org/)
 
 ## Todo
 
-- [x] [Basic Classification](https://www.tensorflow.org/tutorials/keras/basic_classification)
-- [x] [Text Classification](https://www.tensorflow.org/tutorials/keras/basic_text_classification)
-- [ ] [Regression](https://www.tensorflow.org/tutorials/keras/basic_regression)
+- [ ] Learn and Use ML section
+    - [x] [Basic Classification](https://www.tensorflow.org/tutorials/keras/basic_classification)
+    - [x] [Text Classification](https://www.tensorflow.org/tutorials/keras/basic_text_classification)
+    - [x] [Regression](https://www.tensorflow.org/tutorials/keras/basic_regression)
+    - [ ] [Overfitting and Underfitting](https://www.tensorflow.org/tutorials/keras/overfit_and_underfit)
+    - [ ] [Save and Restore Models](https://www.tensorflow.org/tutorials/keras/save_and_restore_models)
+- [ ] Translate all comment to Japanese
 
 ## Installation
 
@@ -41,8 +45,8 @@ $ pyenv global miniconda3-latest
 ## Update Miniconda packages
 $ conda update --all
 
-## Install TensorFlow, NumPy and Matplotlib
-$ conda install tensorflow numpy matplotlib
+## Install TensorFlow and other required packages
+$ conda install tensorflow numpy matplotlib pandas
 # Make sure that TensorFlow is installed
 $ python -c "import tensorflow as tf; print(tf.__version__)"
 1.10.0
