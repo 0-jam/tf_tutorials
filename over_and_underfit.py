@@ -51,7 +51,7 @@ def build_model(size):
     return model
 
 def fit_model(model):
-    model.fit(
+    history = model.fit(
         train_data,
         train_labels,
         epochs=20,
@@ -59,6 +59,8 @@ def fit_model(model):
         validation_data=(test_data, test_labels),
         verbose=2
     )
+
+    return history
 
 # Create a baseline model
 # >>> baseline_model.summary()
