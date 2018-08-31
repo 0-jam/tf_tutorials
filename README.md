@@ -17,12 +17,12 @@ TensorFlow tutorials from [official website](https://www.tensorflow.org/)
 
 ## Todo
 
-- [ ] Learn and Use ML section
+- [x] Learn and Use ML section
     - [x] [Basic Classification](https://www.tensorflow.org/tutorials/keras/basic_classification)
     - [x] [Text Classification](https://www.tensorflow.org/tutorials/keras/basic_text_classification)
     - [x] [Regression](https://www.tensorflow.org/tutorials/keras/basic_regression)
     - [x] [Overfitting and Underfitting](https://www.tensorflow.org/tutorials/keras/overfit_and_underfit)
-    - [ ] [Save and Restore Models](https://www.tensorflow.org/tutorials/keras/save_and_restore_models)
+    - [x] [Save and Restore Models](https://www.tensorflow.org/tutorials/keras/save_and_restore_models)
 - [ ] Translate all comment to Japanese
 - [ ] Windows installation instruction
 
