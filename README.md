@@ -1,6 +1,7 @@
 # TensorFlow Tutorials
 
-TensorFlow tutorials from [official website](https://www.tensorflow.org/)
+- TensorFlow tutorials from [official website](https://www.tensorflow.org/) + a few modification
+- The main purpose of this repository is learning how to use TensorFlow and how machine learning works
 
 ---
 
@@ -35,6 +36,7 @@ TensorFlow tutorials from [official website](https://www.tensorflow.org/)
     - [x] [Overfitting and Underfitting](https://www.tensorflow.org/tutorials/keras/overfit_and_underfit)
     - [x] [Save and Restore Models](https://www.tensorflow.org/tutorials/keras/save_and_restore_models)
 - [ ] Translate all comment to Japanese
+    - Translated files should be renamed such as 'basic_classification.ja.py' ...
 - [ ] Windows installation instruction
 
 ## Installation
@@ -43,7 +45,7 @@ TensorFlow tutorials from [official website](https://www.tensorflow.org/)
 ## Clone pyenv repository
 $ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 
-## Set & source environment valiable
+## Set & source environment variable
 $ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 $ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 $ echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bashrc

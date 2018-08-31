@@ -1,6 +1,7 @@
 # TensorFlowチュートリアル
 
-TensorFlow[公式サイト](https://www.tensorflow.org/)のチュートリアル
+- TensorFlow[公式サイト](https://www.tensorflow.org/)のチュートリアルに、少しだけ追記・修正したもの
+- TensorFlowの使い方と、機械学習の動きを勉強するためのリポジトリ
 
 ---
 
@@ -35,6 +36,7 @@ TensorFlow[公式サイト](https://www.tensorflow.org/)のチュートリアル
     - [x] [Overfitting and Underfitting](https://www.tensorflow.org/tutorials/keras/overfit_and_underfit)（過学習と未学習）
     - [x] [Save and Restore Models](https://www.tensorflow.org/tutorials/keras/save_and_restore_models)（モデルの保存と読み込み）
 - [ ] コメントの日本語訳
+    - 翻訳版は別ファイルにしたほうがいいかも…
 - [ ] Windows上でのインストール手順
 
 ## インストール
