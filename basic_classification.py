@@ -35,7 +35,7 @@ class_names = [
 ## number and resolution of images in the training set
 # >>> train_images.shape
 # (60000, 28, 28)
-## number of label in the training set
+## number of labels in the training set
 # >>> len(train_labels)
 # 60000
 ## format of labels (in this case, each labels is an integer between 0 and 9)
@@ -46,7 +46,7 @@ class_names = [
 ## number and resolution of images in the test set
 # >>> test_images.shape
 # (10000, 28, 28)
-## number of label in the test set
+## number of labels in the test set
 # >>> len(test_labels)
 # 10000
 
