@@ -1,4 +1,4 @@
-### It may takes a long time and consumes large amount of RAM to execute...
+### It may takes a long time (around 30 minutes) and consumes large amount of RAM (over 4GB) to execute
 ## Import libraries
 # TensorFlow and tf.keras
 import tensorflow as tf

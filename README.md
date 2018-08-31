@@ -24,6 +24,7 @@ TensorFlow tutorials from [official website](https://www.tensorflow.org/)
     - [x] [Overfitting and Underfitting](https://www.tensorflow.org/tutorials/keras/overfit_and_underfit)
     - [ ] [Save and Restore Models](https://www.tensorflow.org/tutorials/keras/save_and_restore_models)
 - [ ] Translate all comment to Japanese
+- [ ] Windows installation instruction
 
 ## Installation
 
@@ -41,13 +42,16 @@ $ source ~/.bashrc
 # TensorFlow for Python 3.7 is unavailable (2018/8/28)
 $ pyenv install miniconda3-latest
 $ pyenv global miniconda3-latest
+# Make sure that Python is successfully installed
+$ python -V
+Python 3.6.6 :: Anaconda, Inc.
 
 ## Update Miniconda packages
 $ conda update --all
 
 ## Install TensorFlow and other required packages
-$ conda install tensorflow numpy matplotlib pandas
-# Make sure that TensorFlow is installed
+$ conda install tensorflow numpy matplotlib pandas h5py pyyaml
+# Make sure that TensorFlow is successfully installed
 $ python -c "import tensorflow as tf; print(tf.__version__)"
 1.10.0
 ```

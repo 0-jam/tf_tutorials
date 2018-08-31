@@ -106,5 +106,8 @@ venv.bak/
 # VSCode Settings
 .vscode/
 
-# Output image files
+# Output files
 output_images/*.png
+training_*/
+my_checkpoint/checkpoint
+my_checkpoint/my_*
