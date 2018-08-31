@@ -2,18 +2,29 @@
 
 TensorFlow tutorials from [official website](https://www.tensorflow.org/)
 
-- Tested environment
-    - Python 3.6.6 on Miniconda 4.5.4
-    - TensorFlow 1.10.0
-    - Ubuntu 18.04.1 on Windows Subsystem for Linux (Windows 10 1803 (April 2018))
-
 ---
 
+1. [Tested environment](#tested-environment)
+    1. [Software](#software)
+    1. [Hardware](#hardware)
 1. [Todo](#todo)
 1. [Installation](#installation)
 1. [Troubleshooting](#troubleshooting)
 
 ---
+
+## Tested environment
+
+### Software
+
+- Python 3.6.6 on Miniconda 4.5.4
+- TensorFlow 1.10.0
+- Ubuntu 18.04.1 on Windows Subsystem for Linux (Windows 10 1803 (April 2018))
+
+### Hardware
+
+- [Intel Core i5 7200U](https://ark.intel.com/products/95443/Intel-Core-i5-7200U-Processor-3M-Cache-up-to-3_10-GHz) CPU
+- 8GB RAM
 
 ## Todo
 
