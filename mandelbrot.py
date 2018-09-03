@@ -10,8 +10,9 @@ from IPython.display import Image, display
 
 ## Display an array of iteration counts as a colorful picture of a fractal
 def drawFractal(arr):
-    a_cyclic = (6.28 * arr / 20.0).reshape(list(arr.shape) + [1])
+    a_cyclic = (np.pi * 2 * arr / 20.0).reshape(list(arr.shape) + [1])
     img = np.concatenate(
+        # set color
         [
             10 + 20 * np.cos(a_cyclic),
             30 + 50 * np.sin(a_cyclic),

@@ -24,8 +24,8 @@
 
 ### ハードウェア
 
-- [Intel Core i5 7200U](https://ark.intel.com/ja/products/95443/Intel-Core-i5-7200U-Processor-3M-Cache-up-to-3_10-GHz) CPU
-- 8GB RAM
+- CPU: Intel [Core i5 7200U](https://ark.intel.com/products/95443/Intel-Core-i5-7200U-Processor-3M-Cache-up-to-3_10-GHz)
+- RAM: 8GB
 
 ## Todo
 
@@ -35,10 +35,17 @@
     - [x] [Regression](https://www.tensorflow.org/tutorials/keras/basic_regression)（回帰分析）
     - [x] [Overfitting and Underfitting](https://www.tensorflow.org/tutorials/keras/overfit_and_underfit)（過学習と未学習）
     - [x] [Save and Restore Models](https://www.tensorflow.org/tutorials/keras/save_and_restore_models)（モデルの保存と読み込み）
+- [ ] 自分のデスクトップで動かしてみる
+    - CPU: AMD [Ryzen 7 1700](https://www.amd.com/ja/products/cpu/amd-ryzen-7-1700)
+    - RAM: 16GB
 - [ ] Arch Linuxもやってみる（個人的な興味）
-- [ ] ほかのチュートリアルもやってみる
-    - [ ] Non-ML（機械学習以外のこと）
-        - [ ] [Mandelbrot Set](https://www.tensorflow.org/tutorials/non-ml/mandelbrot)（マンデルブロ集合）
+- [ ] CUDAを試す
+    - NVIDIAのGPU持っていないので試せない :(
+- ほかのチュートリアルもやってみる
+    - Generative Models（生成モデル）
+        - [ ] [Text Generation](https://github.com/tensorflow/tensorflow/blob/r1.10/tensorflow/contrib/eager/python/examples/generative_examples/text_generation.ipynb)（テキスト生成）
+    - Non-ML（機械学習以外のこと）
+        - [x] [Mandelbrot Set](https://www.tensorflow.org/tutorials/non-ml/mandelbrot)（マンデルブロ集合）
 - [ ] リファクタリング
 - [ ] コメントの日本語訳
     - 翻訳版は'basic_classification.ja.py'みたいに別ファイルにしたほうがいいかも…
@@ -76,4 +83,4 @@ $ python -c "import tensorflow as tf; print(tf.__version__)"
 
 ## トラブルシューティング
 
-- Matplotlibを使うプログラムの実行中に`ImportError("Failed to import any qt binding")`が出たら、`pyqt`をインストール
+- Matplotlibを使うスクリプトの実行中に`ImportError("Failed to import any qt binding")`が出たら、`pyqt`をインストール

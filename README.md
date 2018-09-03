@@ -25,8 +25,8 @@
 
 ### Hardware
 
-- [Intel Core i5 7200U](https://ark.intel.com/products/95443/Intel-Core-i5-7200U-Processor-3M-Cache-up-to-3_10-GHz) CPU
-- 8GB RAM
+- CPU: Intel [Core i5 7200U](https://ark.intel.com/products/95443/Intel-Core-i5-7200U-Processor-3M-Cache-up-to-3_10-GHz)
+- RAM: 8GB
 
 ## Todo
 
@@ -36,11 +36,17 @@
     - [x] [Regression](https://www.tensorflow.org/tutorials/keras/basic_regression)
     - [x] [Overfitting and Underfitting](https://www.tensorflow.org/tutorials/keras/overfit_and_underfit)
     - [x] [Save and Restore Models](https://www.tensorflow.org/tutorials/keras/save_and_restore_models)
+- [ ] Run these scripts on my own desktop PC
+    - CPU: AMD [Ryzen 7 1700](https://www.amd.com/ja/products/cpu/amd-ryzen-7-1700)
+    - RAM: 16GB
 - [ ] Try Arch Linux (for my personal interest)
-- [ ] Try another tutorials
-    - [ ] Non-ML
-        - [ ] [Mandelbrot Set](https://www.tensorflow.org/tutorials/non-ml/mandelbrot)
-            - [ ] Check meaning of individual sentence
+- [ ] Try CUDA
+    - Currently I cannot try this because I don't have NVIDIA GPU :(
+- Try another tutorials
+    - Genarative Models
+        - [ ] [Text Generation](https://github.com/tensorflow/tensorflow/blob/r1.10/tensorflow/contrib/eager/python/examples/generative_examples/text_generation.ipynb)
+    - Non-ML
+        - [x] [Mandelbrot Set](https://www.tensorflow.org/tutorials/non-ml/mandelbrot)
 - [ ] Refactoring
 - [ ] Translate all comment to Japanese
     - Translated files should be renamed such as 'basic_classification.ja.py' ...
@@ -85,4 +91,4 @@ $ python -c "import tensorflow as tf; print(tf.__version__)"
 
 ## Troubleshooting
 
-- If you got `ImportError("Failed to import any qt binding")` while running program that uses Matplotlib, install `pyqt`
+- If you got `ImportError("Failed to import any qt binding")` while running script that uses Matplotlib, install `pyqt`
