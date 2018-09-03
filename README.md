@@ -5,16 +5,17 @@
 
 ---
 
-1. [Tested environment](#tested-environment)
+1. [Environment](#environment)
     1. [Software](#software)
     1. [Hardware](#hardware)
 1. [Todo](#todo)
 1. [Installation](#installation)
+1. [Note](#note)
 1. [Troubleshooting](#troubleshooting)
 
 ---
 
-## Tested environment
+## Environment
 
 ### Software
 
@@ -35,6 +36,12 @@
     - [x] [Regression](https://www.tensorflow.org/tutorials/keras/basic_regression)
     - [x] [Overfitting and Underfitting](https://www.tensorflow.org/tutorials/keras/overfit_and_underfit)
     - [x] [Save and Restore Models](https://www.tensorflow.org/tutorials/keras/save_and_restore_models)
+- [ ] Try Arch Linux (for my personal interest)
+- [ ] Try another tutorials
+    - [ ] Non-ML
+        - [ ] [Mandelbrot Set](https://www.tensorflow.org/tutorials/non-ml/mandelbrot)
+            - [ ] Check meaning of individual sentence
+- [ ] Refactoring
 - [ ] Translate all comment to Japanese
     - Translated files should be renamed such as 'basic_classification.ja.py' ...
 - [ ] Windows installation instruction
@@ -64,10 +71,17 @@ $ conda update --all
 
 ## Install TensorFlow and other required packages
 $ conda install tensorflow numpy matplotlib pandas h5py pyyaml
+# "Non-ML" section
+$ conda install ipython pillow
 # Make sure that TensorFlow is successfully installed
 $ python -c "import tensorflow as tf; print(tf.__version__)"
 1.10.0
 ```
+
+## Note
+
+- All opening window function (such as `plt.show()`) was replaced by saving as an image (such as `plt.savefig('filename')`)
+    - `show()` method does not open window in WSL
 
 ## Troubleshooting
 

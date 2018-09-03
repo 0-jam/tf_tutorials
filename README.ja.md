@@ -5,7 +5,7 @@
 
 ---
 
-1. [動作確認環境](#動作確認環境)
+1. [環境](#環境)
     1. [ソフトウェア](#ソフトウェア)
     1. [ハードウェア](#ハードウェア)
 1. [Todo](#todo)
@@ -14,7 +14,7 @@
 
 ---
 
-## 動作確認環境
+## 環境
 
 ### ソフトウェア
 
@@ -35,8 +35,13 @@
     - [x] [Regression](https://www.tensorflow.org/tutorials/keras/basic_regression)（回帰分析）
     - [x] [Overfitting and Underfitting](https://www.tensorflow.org/tutorials/keras/overfit_and_underfit)（過学習と未学習）
     - [x] [Save and Restore Models](https://www.tensorflow.org/tutorials/keras/save_and_restore_models)（モデルの保存と読み込み）
+- [ ] Arch Linuxもやってみる（個人的な興味）
+- [ ] ほかのチュートリアルもやってみる
+    - [ ] Non-ML（機械学習以外のこと）
+        - [ ] [Mandelbrot Set](https://www.tensorflow.org/tutorials/non-ml/mandelbrot)（マンデルブロ集合）
+- [ ] リファクタリング
 - [ ] コメントの日本語訳
-    - 翻訳版は別ファイルにしたほうがいいかも…
+    - 翻訳版は'basic_classification.ja.py'みたいに別ファイルにしたほうがいいかも…
 - [ ] Windows上でのインストール手順
 
 ## インストール
