@@ -156,8 +156,6 @@ model.save(model_path)
 
 # Recreate the model from previous file
 model2 = keras.models.load_model(model_path)
-if model == model2:
-    print("Recreated the same model")
 
 loss, acc = model2.evaluate(test_images, test_labels)
 print("Restored model, accuracy: {:5.2f}%".format(100*acc))

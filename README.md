@@ -44,11 +44,11 @@
     - Currently I cannot try this because I don't have NVIDIA GPU :(
 - Try another tutorials
     - Genarative Models
-        - [ ] [Text Generation](https://github.com/tensorflow/tensorflow/blob/r1.10/tensorflow/contrib/eager/python/examples/generative_examples/text_generation.ipynb)
+        - [x] [Text Generation](https://github.com/tensorflow/tensorflow/blob/r1.10/tensorflow/contrib/eager/python/examples/generative_examples/text_generation.ipynb)
     - Non-ML
         - [x] [Mandelbrot Set](https://www.tensorflow.org/tutorials/non-ml/mandelbrot)
 - [ ] Refactoring
-- [ ] Translate all comment to Japanese
+- [ ] Translate all comments and this README to Japanese
     - Translated files should be renamed such as 'basic_classification.ja.py' ...
 - [ ] Windows installation instruction
 
@@ -77,6 +77,8 @@ $ conda update --all
 
 ## Install TensorFlow and other required packages
 $ conda install tensorflow numpy matplotlib pandas h5py pyyaml
+# "Generative Model" section
+$ conda install unidecode
 # "Non-ML" section
 $ conda install ipython pillow
 # Make sure that TensorFlow is successfully installed
