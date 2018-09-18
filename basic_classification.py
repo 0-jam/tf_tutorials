@@ -12,6 +12,7 @@ print("Using TensorFlow", tf.__version__)
 
 ## Load dataset
 # Fashion MNIST dataset: 70000 grayscale images of clothes in 10 categories
+# each image size is 28 x 28 pixels
 fashion_mnist = keras.datasets.fashion_mnist
 # associate image with label
 # train_*: training set

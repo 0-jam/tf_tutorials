@@ -1,4 +1,5 @@
 ### It may takes a long time to execute
+# If embedded_dim = 256 and units = 1024, it takes about 30 minutes for each epoch
 ## Import libraries for simulation
 import tensorflow as tf
 tf.enable_eager_execution()
@@ -110,7 +111,7 @@ def loss_function(real, preds):
     return tf.losses.sparse_softmax_cross_entropy(labels=real, logits=preds)
 
 ## Train the model
-# Note: 1/30 epoch size to shorten running time
+# Note: 1/6 epoch size to shorten running time
 epochs = 5
 # epochs = 30
 

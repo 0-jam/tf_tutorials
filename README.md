@@ -21,7 +21,7 @@
 
 - Python 3.6.6 on Miniconda 4.5.4
 - TensorFlow 1.10.0
-- Ubuntu 18.04.1 on Windows Subsystem for Linux (Windows 10 1803 (April 2018))
+- Ubuntu 18.04.1 on Windows Subsystem for Linux (Windows 10 Home 1803 (April 2018))
 
 ### Hardware
 
@@ -39,6 +39,7 @@
 - [ ] Run these scripts on my own desktop PC
     - CPU: AMD [Ryzen 7 1700](https://www.amd.com/ja/products/cpu/amd-ryzen-7-1700)
     - RAM: 16GB
+    - OS: Ubuntu 18.04.1 on Windows Subsystem for Linux (Windows 10 Home 1803 (April 2018))
 - [ ] Try Arch Linux (for my personal interest)
 - [ ] Try CUDA
     - Currently I cannot try this because I don't have NVIDIA GPU :(
@@ -65,7 +66,6 @@ $ echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\
 $ source ~/.bashrc
 
 ## Install Python (Miniconda)
-# TensorFlow for Python 3.7 is unavailable (2018/8/28)
 $ pyenv install miniconda3-latest
 $ pyenv global miniconda3-latest
 # Make sure that Python is successfully installed
