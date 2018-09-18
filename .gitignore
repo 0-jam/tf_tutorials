@@ -108,6 +108,7 @@ venv.bak/
 
 # Output files
 output_images/*.png
+output_images/*.csv
 training_*/
 my_checkpoint/checkpoint
 my_checkpoint/my_*
