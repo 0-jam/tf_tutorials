@@ -10,6 +10,9 @@
     1. [Hardware](#hardware)
 1. [Todo](#todo)
 1. [Installation](#installation)
+    1. [Install Python with Miniconda](#install-python-with-miniconda)
+    1. [Install Python without Miniconda](#install-python-without-miniconda)
+    1. [Install TensorFlow and other required packages](#install-tensorflow-and-other-required-packages)
 1. [Note](#note)
 1. [Troubleshooting](#troubleshooting)
 
@@ -47,7 +50,7 @@
 - Try another tutorials
     - Research and experimentation
         - [x] [Eager execution basics](https://www.tensorflow.org/tutorials/eager/eager_basics)
-        - [ ] [Automatic differentiation and gradient tape](https://www.tensorflow.org/tutorials/eager/automatic_differentiation)
+        - [x] [Automatic differentiation and gradient tape](https://www.tensorflow.org/tutorials/eager/automatic_differentiation)
         - [ ] [Custom training: basics](https://www.tensorflow.org/tutorials/eager/custom_training)
         - [ ] [Custom layers](https://www.tensorflow.org/tutorials/eager/custom_layers)
         - [ ] [Custom training: walkthrough](https://www.tensorflow.org/tutorials/eager/custom_training_walkthrough)
@@ -71,32 +74,45 @@ $ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 $ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 $ echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bashrc
 $ source ~/.bashrc
+```
 
-## Install Python with Miniconda
+### Install Python with Miniconda
+
+```bash
 $ pyenv install miniconda3-latest
 $ pyenv global miniconda3-latest
+
 # Make sure that Python is successfully installed
 $ python -V
 Python 3.6.6 :: Anaconda, Inc.
-
-## Update Miniconda packages
+# Update Miniconda packages
 $ conda update --all
+```
 
-## Install Python without Miniconda
+### Install Python without Miniconda
+
+```bash
 # Before installing Python, install tk-dev for matplotlib dependency
 # to avoid "ModuleNotFoundError: No module named '_tkinter'"
 $ sudo apt install tk-dev
+# Build Python (tk-enabled)
 # TensorFlow for Python 3.7.x is unavailable (2018/9/18)
 $ pyenv install 3.6.6
 $ pyenv global 3.6.6
-
-## Update pip packages
+# Make sure that Python is successfully installed
+$ python -V
+Python 3.6.6
+# Update pip packages
 $ pip install -U pip
 $ pip install pip-review
 $ pip-review --auto
+```
 
-## Install TensorFlow and other required packages
-# If you have installed Python without Miniconda, replace "conda" with "pip"
+### Install TensorFlow and other required packages
+
+- If you have installed Python without Miniconda, replace `conda` with `pip`
+
+```bash
 $ conda install tensorflow numpy matplotlib pandas h5py pyyaml
 # "Generative Model" section
 $ conda install unidecode
