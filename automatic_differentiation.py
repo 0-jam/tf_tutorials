@@ -2,6 +2,9 @@ import tensorflow as tf
 tf.enable_eager_execution()
 import numpy
 
+## Show TensorFlow version
+print("Using TensorFlow", tf.__version__)
+
 # Shorthand for some symbols
 tfe = tf.contrib.eager
 
@@ -13,7 +16,7 @@ def sin_square(radius):
     return tf.square(tf.sin(radius))
 
 # Throw exception if sin_square(pi / 2) is not 1.0
-# sin(pi/2) = 1.0
+# sin(pi / 2) = 1.0
 assert sin_square(pi / 2).numpy() == 1.0
 
 # grad_square will return a list of derivatives of f
@@ -21,7 +24,7 @@ assert sin_square(pi / 2).numpy() == 1.0
 # grad_square will return a list with a single element.
 grad_square = tfe.gradients_function(sin_square)
 # 8.742278e-08
-assert tf.abs(grad_square(pi/2)[0]).numpy() < 1e-7
+assert tf.abs(grad_square(pi / 2)[0]).numpy() < 1e-7
 
 ## Higher-order gradients
 def grad(function):
