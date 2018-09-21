@@ -92,9 +92,9 @@ $ conda update --all
 ### Install Python without Miniconda
 
 ```bash
-# Before installing Python, install tk-dev for matplotlib dependency
-# to avoid "ModuleNotFoundError: No module named '_tkinter'"
-$ sudo apt install tk-dev
+# Before building Python, install some packages
+# Install tk-dev to avoid "ModuleNotFoundError: No module named '_tkinter'"
+$ sudo apt install tk-dev build-essential zlib1g-dev libssl-dev
 # Build Python (tk-enabled)
 # TensorFlow for Python 3.7.x is unavailable (2018/9/18)
 $ pyenv install 3.6.6
