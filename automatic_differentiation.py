@@ -40,7 +40,7 @@ plt.plot(radius, grad(sin_square)(radius), label="first derivative")
 plt.plot(radius, grad(grad(sin_square))(radius), label="second derivative")
 plt.plot(radius, grad(grad(grad(sin_square)))(radius), label="third derivative")
 plt.legend()
-plt.savefig("output_images/higrad.png")
+plt.show()
 
 ## Gradient tapes
 # f(x) = x^y

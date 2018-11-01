@@ -28,10 +28,10 @@ idx2char = {index:char for index, char in enumerate(unique)}
 # set the maximum length of sentence
 max_length = 100
 vocab_size = len(unique)
-embedding_dim = 128
+embedding_dim = 64
 # embedding_dim = 256
 # number of RNN (Recursive Neural Network) units
-units = 512
+units = 256
 # units = 1024
 batch_size = 64
 # buffer size to shuffle our dataset

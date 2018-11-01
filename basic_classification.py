@@ -5,7 +5,6 @@ from tensorflow import keras
 # helper libraries
 import numpy as np
 import matplotlib.pyplot as plt
-plt.switch_backend('agg')
 
 ## Show TensorFlow version
 print("Using TensorFlow", tf.__version__)
@@ -92,7 +91,7 @@ plt.figure()
 plt.imshow(train_images[0])
 plt.colorbar()
 plt.grid(False)
-plt.savefig("output_images/t1_img_1st.png")
+plt.show()
 
 # scale pixel values to a range of 0 to 1
 train_images = train_images / 255.0
@@ -107,7 +106,7 @@ for i in range(25):
     plt.grid(False)
     plt.imshow(train_images[i], cmap=plt.cm.binary)
     plt.xlabel(class_names[train_labels[i]])
-plt.savefig("output_images/t1_training_set_class_names.png")
+plt.show()
 
 ## Build the model
 # setup the layers
@@ -171,4 +170,4 @@ for i in range(num_images):
     plt.subplot(num_rows, 2*num_cols, (2*i)+2)
     plot_value_array(i, predictions, test_labels)
 
-plt.savefig("output_images/t1_result.png")
+plt.show()

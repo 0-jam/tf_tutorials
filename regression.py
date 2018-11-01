@@ -6,7 +6,6 @@ from tensorflow import keras
 # helper libraries
 import numpy as np
 import matplotlib.pyplot as plt
-plt.switch_backend('agg')
 
 ## Show TensorFlow version
 print("Using TensorFlow", tf.__version__)
@@ -160,7 +159,7 @@ history = model.fit(
 )
 
 plot_history(history)
-plt.savefig('output_images/t3_loss.png')
+plt.show()
 
 model = build_model()
 history = model.fit(
@@ -177,7 +176,7 @@ history = model.fit(
     ]
 )
 plot_history(history)
-plt.savefig('output_images/t3_loss_es.png')
+plt.show()
 
 [loss, mae] = model.evaluate(test_data, test_labels, verbose=0)
 # Testing set Mean Absolute Error: $2548.64
@@ -197,7 +196,7 @@ plt.xlim(plt.xlim())
 # (-1.598052716085393, 51.83531789762637)
 plt.ylim(plt.ylim())
 plt.plot([-100, 100], [-100, 100])
-plt.savefig('output_images/t3_result.png')
+plt.show()
 
 # draw error
 plt.clf()
@@ -205,4 +204,4 @@ error = test_predictions - test_labels
 plt.hist(error, bins=50)
 plt.xlabel("Prediction Error [1000$]")
 plt.ylabel("Count")
-plt.savefig('output_images/t3_error.png')
+plt.show()

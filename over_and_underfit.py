@@ -6,7 +6,6 @@ from tensorflow import keras
 # helper libraries
 import numpy as np
 import matplotlib.pyplot as plt
-plt.switch_backend('agg')
 
 ## Show TensorFlow version to make sure that TensorFlow is successfully loaded
 print("Using TensorFlow", tf.__version__)
@@ -31,7 +30,7 @@ train_data = multi_hot_sequences(train_data, dimension=NUM_WORDS)
 test_data = multi_hot_sequences(test_data, dimension=NUM_WORDS)
 
 plt.plot(train_data[0])
-plt.savefig('output_images/t4_encoded_first_data.png')
+plt.show()
 
 ## Demonstrate Overfitting
 # Create a model
@@ -126,7 +125,7 @@ plot_history([
     ('smaller', smaller_history),
     ('bigger', bigger_history)
 ])
-plt.savefig('output_images/t4_loss.png')
+plt.show()
 
 ### Strategies
 ## Add weight regularization
@@ -153,7 +152,7 @@ plot_history([
     ('baseline', baseline_history),
     ('l2', l2_history),
 ])
-plt.savefig('output_images/t4_loss_l2.png')
+plt.show()
 
 ## Add dropout
 def build_dropout_model(size):
@@ -180,4 +179,4 @@ plot_history([
     ('baseline', baseline_history),
     ('dropout', dpt_history),
 ])
-plt.savefig('output_images/t4_loss_dpt.png')
+plt.show()

@@ -5,7 +5,6 @@ from tensorflow import keras
 # helper libraries
 import numpy as np
 import matplotlib.pyplot as plt
-plt.switch_backend('agg')
 
 ## Show TensorFlow version
 print("Using TensorFlow", tf.__version__)
@@ -146,10 +145,7 @@ plt.title('Training and Validation loss')
 plt.xlabel('Epochs')
 plt.ylabel('Loss')
 plt.legend()
-plt.savefig('output_images/t2_loss.png')
-
-# clear figure
-plt.clf()
+plt.show()
 
 ## Accuracy graph
 plt.plot(epochs, history_dict['acc'], 'bo', label='Training accuracy')
@@ -158,4 +154,4 @@ plt.title('Training and Validation accuracy')
 plt.xlabel('Epochs')
 plt.ylabel('Accuracy')
 plt.legend()
-plt.savefig('output_images/t2_acc.png')
+plt.show()

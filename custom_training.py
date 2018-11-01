@@ -68,7 +68,7 @@ import matplotlib.pyplot as plt
 # 'b' is blue, 'r is red
 plt.scatter(inputs, outputs, c = 'b')
 plt.scatter(inputs, model(inputs), c = 'r')
-plt.savefig("output_images/custom_model_pred.png")
+plt.show()
 
 print("Current loss:", loss(model(inputs), outputs).numpy())
 
@@ -97,4 +97,4 @@ plt.clf()
 plt.plot(epochs, Ws, 'r', epochs, bs, 'b')
 plt.plot([TRUE_W] * len(epochs), 'r--', [TRUE_b] * len(epochs), 'b--')
 plt.legend(['W', 'b', 'true W', 'true b'])
-plt.savefig("output_images/custom_model_train.png")
+plt.show()
